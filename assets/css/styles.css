@@ -69,6 +69,30 @@ p {
     margin-bottom: 3rem;
 }
 
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+tfoot td, table th {
+    background: var(--light-gray-color);
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color)
+}
+
 .main-bg {
     background-image: url('../img/main-bg.svg');
     background-size: cover;
@@ -241,4 +265,9 @@ p {
 
 .gallery-img img:hover {
     transform: translate(3%, 3%) scale(1.2) rotate(5deg); /* Efeito de zoom nas imagens da galery*/
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
 }
